@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        /* li{
+            color: red;
+        }
+        .fundo-verde li{
+            background: lightgreen;
+        }
+        .fundo-azul li{
+            background: lightblue;
+        }
+        .fundo-verde #sublista-01 li{
+            color: black;
+        } */
+        div > p {
+            background: red;
+        }
+        p + span{
+            color: tomato;
+        }
+        div + p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>item 1</div>
+            <ul id="sublista-01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>item 2</div>
+            <ul id="sublista-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>item 3</div>
+            <ul id="sublista-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul> -->
+    <div>
+        <p>Parágrafo 1 dentro da div</p>
+        <p>Parágrafo 2 dentro da div</p>
+        <span>
+            <p>Parágrafo 3 dentro da div, dentro do span</p>
+        </span>
+    </div>
+    <p>Parágrafo 4 fora da div</p>
+    <p>Parágrafo 5 fora da div</p>
+
+</body>
+</html>
