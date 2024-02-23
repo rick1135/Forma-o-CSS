@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bordas</title>
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+      }
+      .exemplo {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border: 10px solid rgb(73, 32, 132);
+        border-radius: 20px 30px 40px;
+      }
+      .exemplo1 {
+        background-color: lightblue;
+        width: 200px;
+        height: 200px;
+        border: 30px solid;
+        margin: 50px auto;
+      }
+      #exemplo1 {
+        border-image-source: url("https://upload.wikimedia.org/wikipedia/commons/2/27/Clube_Atl%C3%A9tico_Mineiro_logo.svg");
+        border-image-repeat: repeat;
+        border-image-slice: 30 fill;
+      }
+      #exemplo2 {
+        border-image-source: linear-gradient(
+          rgb(0, 145, 255),
+          rgb(0, 242, 255)
+        );
+        border-image-slice: 10;
+      }
+      #exemplo-resumido {
+        border-image: url("https://upload.wikimedia.org/wikipedia/commons/2/27/Clube_Atl%C3%A9tico_Mineiro_logo.svg")
+          160 round ;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bordas</h1>
+    <p>
+      Podemos definir as configurações das nossas bordas através das
+      propriedades:
+    </p>
+    <ul>
+      <li>border-width</li>
+      <li>border-style</li>
+      <li>border-color</li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <div class="exemplo"></div>
+    <hr />
+    <h1>Bordas com Imagens</h1>
+    <ul>
+      <li>border-image-source</li>
+      <li>border-image-width</li>
+      <li>border-image-repeat</li>
+      <li>border-image-outset</li>
+      <li>border-image-slice</li>
+    </ul>
+    <div id="exemplo-resumido" class="exemplo1"></div>
+    <br />
+    <h2>Exemplo:</h2>
+    <div id="exemplo1" class="exemplo1"></div>
+    <br />
+    <div id="exemplo2" class="exemplo1"></div>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin-bottom: 30px;
+      }
+      .exemplo {
+        width: 300px;
+        height: 300px;
+        background-image: url("./assets/img/vista-do-mar-com-ceu-claro-e-ondas-ao-por-do-sol.jpg");
+      }
+      .exemplo2 {
+        width: 300px;
+        height: 300px;
+        background-image: url("./assets/img/vista-do-mar-com-ceu-claro-e-ondas-ao-por-do-sol.jpg");
+        background-size: 120px;
+        border: 1px solid red;
+      }
+      .exemplo3 {
+        width: 300px;
+        height: 300px;
+        background-image: url("./assets/img/vista-do-mar-com-ceu-claro-e-ondas-ao-por-do-sol.jpg");
+        background-size: cover;
+        border: 1px solid red;
+        overflow: auto;
+      }
+      .exemplo4 {
+        width: 300px;
+        height: 300px;
+        background-image: url("./assets/img/vista-do-mar-com-ceu-claro-e-ondas-ao-por-do-sol.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 15px dashed palegreen;
+        padding: 30px;
+      }
+      #cover {
+        background-size: cover;
+      }
+      #contain {
+        background-size: contain;
+      }
+      #valor {
+        background-size: 50%;
+      }
+      #exemplo-x-y {
+        background-size: 200px 250px;
+      }
+      #repeat-x {
+        background-repeat: repeat-x;
+      }
+      #repeat-y {
+        background-repeat: repeat-y;
+      }
+      #space {
+        background-repeat: space;
+      }
+      #round {
+        background-repeat: round;
+      }
+      #no-repeat {
+        background-repeat: no-repeat;
+      }
+      #fixed {
+        background-attachment: fixed;
+      }
+      #scroll {
+        background-attachment: scroll;
+      }
+      #local {
+        background-attachment: local;
+      }
+      #padding-box{
+        background-origin: padding-box;
+      }
+      #border-box{
+        background-origin: border-box;
+      }
+      #content-box{
+        background-origin: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <code>background-size: auto;</code>
+    <div class="exemplo"></div>
+    <code>background-size: cover;</code>
+    <div id="cover" class="exemplo"></div>
+    <code>background-size: contain;</code>
+    <div id="contain" class="exemplo"></div>
+    <code>background-size: valor;</code>
+    <div id="valor" class="exemplo"></div>
+    <code>background-size: <i>valor-1 valor-2</i>;</code>
+    <div id="exemplo-x-y" class="exemplo"></div>
+    <hr />
+    <code>background-repeat: repeat;</code>
+    <div id="repeat" class="exemplo2"></div>
+    <code>background-repeat: repeat-x;</code>
+    <div id="repeat-x" class="exemplo2"></div>
+    <code>background-repeat: repeat-y;</code>
+    <div id="repeat-y" class="exemplo2"></div>
+    <code>background-repeat: space;</code>
+    <div id="space" class="exemplo2"></div>
+    <code>background-repeat: round;</code>
+    <div id="round" class="exemplo2"></div>
+    <code>background-repeat: no-repeat;</code>
+    <div id="no-repeat" class="exemplo2"></div>
+    <hr />
+    <code>background-attachment: fixed;</code>
+    <div id="fixed" class="exemplo3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aperiam
+      corrupti, doloremque iste omnis delectus quidem temporibus architecto odit
+      minus nulla voluptatibus minima, vel excepturi expedita iusto quibusdam
+      natus unde.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Perspiciatis, obcaecati eaque totam veritatis minus harum quam nam esse
+      laudantium nemo dolorum? Pariatur molestiae reiciendis natus accusantium
+      optio omnis ducimus atque?Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Perspiciatis, obcaecati eaque totam veritatis minus
+      harum quam nam esse laudantium nemo dolorum? Pariatur molestiae reiciendis
+      natus accusantium optio omnis ducimus atque?Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Perspiciatis, obcaecati eaque totam
+      veritatis minus harum quam nam esse laudantium nemo dolorum? Pariatur
+      molestiae reiciendis natus accusantium optio omnis ducimus atque?
+    </div>
+    <code>background-attachment: scroll;</code>
+    <div id="scroll" class="exemplo3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eius
+      aperiam eveniet? Cum, officiis velit! Delectus repellat rerum officia
+      facilis in. Beatae ducimus veritatis quas ea non dicta, ratione
+      mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Perspiciatis, obcaecati eaque totam veritatis minus harum quam nam esse
+      laudantium nemo dolorum? Pariatur molestiae reiciendis natus accusantium
+      optio omnis ducimus atque?Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Perspiciatis, obcaecati eaque totam veritatis minus
+      harum quam nam esse laudantium nemo dolorum? Pariatur molestiae reiciendis
+      natus accusantium optio omnis ducimus atque?Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Perspiciatis, obcaecati eaque totam
+      veritatis minus harum quam nam esse laudantium nemo dolorum? Pariatur
+      molestiae reiciendis natus accusantium optio omnis ducimus atque?
+    </div>
+    <code>background-attachment: local;</code>
+    <div id="local" class="exemplo3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+      obcaecati eaque totam veritatis minus harum quam nam esse laudantium nemo
+      dolorum? Pariatur molestiae reiciendis natus accusantium optio omnis
+      ducimus atque?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Perspiciatis, obcaecati eaque totam veritatis minus harum quam nam esse
+      laudantium nemo dolorum? Pariatur molestiae reiciendis natus accusantium
+      optio omnis ducimus atque?Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Perspiciatis, obcaecati eaque totam veritatis minus
+      harum quam nam esse laudantium nemo dolorum? Pariatur molestiae reiciendis
+      natus accusantium optio omnis ducimus atque?Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Perspiciatis, obcaecati eaque totam
+      veritatis minus harum quam nam esse laudantium nemo dolorum? Pariatur
+      molestiae reiciendis natus accusantium optio omnis ducimus atque?
+    </div>
+    <hr>
+    <code>background-origin: padding-box;</code>
+    <div id="padding-box" class="exemplo4"></div>
+    <code>background-origin: border-box;</code>
+    <div id="padding-box" class="exemplo4"></div>
+    <code>background-origin: content-box;</code>
+    <div id="content-box" class="exemplo4"></div>
+  </body>
+</html>
