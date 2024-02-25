@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .exemplo1 {
+        background-color: palevioletred;
+      }
+      .exemplo2 {
+        background-color: aquamarine;
+      }
+      .inlne {
+        color: white;
+      }
+      b {
+        margin: 20px;
+      }
+      .inline-block {
+        display: inline-block;
+        width: 200px;
+        margin: 8px;
+        padding: 30px;
+      }
+      .menu {
+        background-color: plum;
+      }
+      .menu ul li {
+        display: inline-block;
+        padding: 20px 40px;
+      }
+      .esconder {
+        display: none;
+      }
+      #item-02 {
+        display: none;
+      }
+      #item-01 {
+        visibility: hidden;
+      }
+      #item-04 {
+        height: 30px;
+        vertical-align: top;
+      }
+      #item-05 {
+        text-align: center;
+      }
+      .container{
+        border: 1px solid red;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade display</h1>
+    <p>
+      A propriedade display vai determinar como essas caixinhas retangulares
+      irão se comportar na hora de serem exibidas na tela.
+    </p>
+    <ul>
+      <li>border-width</li>
+      <li>border-style</li>
+      <li>border-color</li>
+    </ul>
+    <h2>Exemplos:</h2>
+    <code>display: block;</code>
+    <br /><br />
+    <div class="exemplo1">Exemplo Bloco 01</div>
+    <div class="exemplo1">Exemplo Bloco 02</div>
+    <br /><br />
+    <code>display: inline;</code>
+    <br /><br />
+    <span class="exemplo2 inline">Exemplo Inline 01</span>
+    <span class="exemplo2 inline">Exemplo Inline 02</span>
+    <em class="exemplo2">Exemplo Inline 03</em>
+    <b class="exemplo2">Exemplo Inline 04</b>
+    <p class="exemplo1" style="display: inline">teste</p>
+    <br /><br />
+    <code>display: inline-block;</code>
+    <br /><br />
+    <span class="exemplo1 inline-block">Exemplo Inline-Block 01</span>
+    <em class="exemplo2 inline-block">Exemplo Inline-Block 02</em>
+    <b class="exemplo2 inline-block">Exemplo Inline-Block 03</b>
+    <span class="exemplo1 inline-block">Exemplo Inline-Block 04</span>
+    <em class="exemplo2 inline-block">Exemplo Inline-Block 05</em>
+    <b class="exemplo2 inline-block">Exemplo Inline-Block 06</b>
+    <p>
+      Lorem ipsum dolor
+      <b class="inline-block exemplo1">sit amet consectetur </b>adipisicing
+      elit. Suscipit doloribus accusantium vitae accusamus, laboriosam eos.
+      Ratione nesciunt debitis, delectus recusandae id veniam eveniet sapiente
+      provident accusamus possimus distinctio totam voluptates.
+    </p>
+    <br /><br />
+    <code>display: none;</code>
+    <br /><br />
+    <div class="esconder exemplo1">Exemplo display none 1</div>
+    <br /><br />
+    <h3>Menu de nav</h3>
+    <nav class="menu">
+      <ul>
+        <li><a href="">Meu link 01</a></li>
+        <li><a href="" class="esconder">Meu link 02</a></li>
+        <li><a href="">Meu link 03</a></li>
+      </ul>
+    </nav>
+    <br /><br />
+    <h1>Display none vs visibility: hidden</h1>
+    <code>display: none;</code>
+    <br /><br />
+    <div>
+      <span id="item-01" class="exemplo1">item-01</span>
+      <span id="item-02" class="exemplo1">item-02</span>
+      <span id="item-03" class="exemplo1">item-03</span>
+    </div>
+    <br /><br /><br />
+    <h1>Alinhando elementos inline</h1>
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Clube_Atl%C3%A9tico_Mineiro_logo.svg/495px-Clube_Atl%C3%A9tico_Mineiro_logo.svg.png"
+        alt=""
+        id="item-04"
+      />
+      <span id="item-05" class="exemplo1">Item 1</span>
+      <span id="item-06" class="exemplo1">Item 2</span>
+    </div>
+  </body>
+</html>
