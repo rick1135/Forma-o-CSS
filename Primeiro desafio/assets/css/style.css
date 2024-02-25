@@ -22,7 +22,7 @@ header.banner {
     justify-content: center;
     align-items: center;
     background-image: url('../img/banner.png'), linear-gradient(180deg, rgba(0, 0, 0, 0.85) 100%, rgba(49, 168, 221, 0) 100%);
-    border: 1px solid #33a8db;
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
     background-size: cover;
     /* Ajuste para 'cover' */
     height: 600px;
@@ -34,6 +34,13 @@ header.banner h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .banner-content p {
@@ -44,12 +51,14 @@ header.banner h1 {
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
+    color: rgba(255, 255, 255, 1);
+    width: 510px;
+    height: 46px
 }
 
 .banner-content {
     width: 510px;
     height: 393px;
-    padding-top: 56px;
     display: block;
     font-size: 14px;
     font-weight: bold;
@@ -72,7 +81,6 @@ header.banner h1 {
 .banner-content {
     width: 510px;
     height: 393px;
-    padding-top: 56px;
     text-align: center;
     position: relative;
 }
@@ -86,9 +94,16 @@ header.banner h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    margin-top: 40px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.21em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .banner-content button:hover {
@@ -196,7 +211,7 @@ footer {
     width: 310px;
     height: 44px;
     top: 59px;
-    left: 565px ;   
+    left: 565px;
 }
 
 footer p {
