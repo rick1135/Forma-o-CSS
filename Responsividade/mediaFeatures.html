@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        background-color: lightblue;
+        padding: 40px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1rem;
+        font-weight: normal;
+      }
+      main {
+        padding: 30px;
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+      }
+      h3 {
+        text-transform: uppercase;
+      }
+      .details {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 25px;
+      }
+      .card {
+        background-color: lightblue;
+        padding: 16px;
+        border-radius: 5px;
+      }
+      .image-card{
+        background-color: lightblue;
+        border: 1px solid lightgrey;
+        padding: 10px;
+        flex-basis: 200px;
+      }
+      .image-card img{
+        width: 100%;
+      }
+      .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 25px;
+      }
+      @media screen and (max-width: 690px){
+        .details{
+            flex-direction: column;
+        }
+        .image-card{
+            flex-basis: 100px;
+        }
+      }
+      @media screen and (orientation: portrait){
+        header{
+            background-color: green;
+        }
+        @media screen and (pointer: coarse) {
+            header{
+                color: lightcoral;
+            }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Layouts flexíveis</h1>
+      <h2>Exemplo de layouts flexíveis utilizando flexbox</h2>
+    </header>
+    <main>
+      <section>
+        <h3>testando</h3>
+        <div class="details">
+          <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+            placeat dolorum consequuntur voluptatem quaerat sint repellat rerum
+            autem doloribus accusamus, tenetur, reprehenderit eos repellendus, a
+            perspiciatis mollitia totam soluta aliquam.
+          </div>
+          <div class="card">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, sint
+            qui debitis aliquid, culpa consequuntur facilis dolorum deleniti,
+            eligendi sapiente rerum sed quas quod pariatur? Nemo commodi quod
+            asperiores unde?
+          </div>
+          <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            saepe nisi eum omnis molestias commodi amet facere natus laboriosam
+            harum repellat, doloremque quod neque, dolore inventore? Corporis
+            accusantium saepe magni!
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>galeria de imagens</h3>
+        <div class="gallery">
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+          <div class="image-card">
+            <img src="https://source.unsplash.com/random/300x300" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

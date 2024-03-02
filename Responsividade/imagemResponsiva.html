@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="imageContainer">
+        <img src="https://source.unsplash.com/random/1920x1080" alt="" />
+    </div>
+    <picture>
+        <source src="https://source.unsplash.com/random/300x300" media="(max-width: 600px)">
+        <source src="https://source.unsplash.com/random/1920x1080">
+        <img src="https://source.unsplash.com/random/1920x1080" alt="" />
+    </picture>
+</body>
+</html>

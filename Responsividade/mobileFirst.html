@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile First</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+      }
+      li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      nav li {
+        background-color: lightgreen;
+        padding: 8px;
+        border-radius: 4px;
+        list-style: none;
+      }
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      #skills{
+        background-color: lightgreen;
+        border: 1px solid green;
+        border-radius: 4px;
+      }
+      #skills ul{
+        list-style: decimal;
+      }
+      #formers{
+        background-color: lightblue;
+        border: 1px solid blue;
+        border-radius: 4px;
+      }
+      main{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      @media screen and (min-width: 720px){
+        main{
+          flex-direction: row;
+          gap: 24px;
+          max-width: 1200px;
+          margin: 16px auto;
+        }
+        #presentation{
+            flex-basis: 500px;
+        }
+        #skills, #formers{
+            flex: 1;
+        }  
+        nav ul{
+            flex-direction: row;
+        }  
+        nav ul li{
+            flex: 1;
+            text-align: center;
+        }    
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="presentation">
+        <h1>Mobile First</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+          accusamus expedita natus ratione porro possimus reiciendis aspernatur
+          ipsa cum ut minus inventore cumque sed sit eum est, temporibus ab
+          neque!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+          accusamus expedita natus ratione porro possimus reiciendis aspernatur
+          ipsa cum ut minus inventore cumque sed sit eum est, temporibus ab
+          neque!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+          accusamus expedita natus ratione porro possimus reiciendis aspernatur
+          ipsa cum ut minus inventore cumque sed sit eum est, temporibus ab
+          neque!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+          accusamus expedita natus ratione porro possimus reiciendis aspernatur
+          ipsa cum ut minus inventore cumque sed sit eum est, temporibus ab
+          neque!
+        </p>
+      </section>
+      <section id="skills">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>PHP</li>
+            <li>C++</li>
+        </ul>
+      </section>
+      <section id="formers">
+        <ul>
+            <li>Técnico de Informática</li>
+            <li>Ciência da computação</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

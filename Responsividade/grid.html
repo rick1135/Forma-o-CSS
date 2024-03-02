@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px repeat(3, 300px);
+        grid-template-areas:
+          "header header header header"
+          "navbar main-content main-content main-content"
+          "navbar content1 content2 content3"
+          "navbar footer footer footer";
+        height: 100vh;
+        margin: 0;
+      }
+      header {
+        background-color: lightblue;
+        grid-area: header;
+        padding: 20px;
+      }
+      nav {
+        background-color: lightgrey;
+        grid-area: navbar;
+        padding: 20px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        margin-bottom: 8px;
+      }
+      li a {
+        text-decoration: none;
+        color: black;
+      }
+      main {
+        background-color: lightgreen;
+        grid-area: main-content;
+        padding: 20px;
+      }
+      #content1 {
+        background-color: lightcoral;
+        grid-area: content1;
+        padding: 20px;
+      }
+      #content2 {
+        background-color: lightgrey;
+        grid-area: content2;
+        padding: 20px;
+      }
+      #content3 {
+        background-color: lightslategray;
+        grid-area: content3;
+        padding: 20px;
+      }
+      footer {
+        background-color: lightblue;
+        grid-area: footer;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header do site</header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Produtos</li>
+        <li>Serviços</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+    <main>Conteúdo principal</main>
+    <section id="content1">Conteúdo 1</section>
+    <section id="content2">Conteúdo 2</section>
+    <section id="content3">Conteúdo 3</section>
+    <footer>Rodapé do site</footer>
+  </body>
+</html>
