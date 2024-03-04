@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      code {
+        background-color: lightgrey;
+      }
+      p::first-letter {
+        font-size: 2em;
+        color: red;
+        background-color: lightgrey;
+        padding: 0 5px;
+        margin-right: 5px;
+        border: 1px solid black;
+      }
+      p::first-line {
+        font-size: 1.5em;
+        color: blue;
+      }
+      iframe::backdrop {
+        background: blue;
+      }
+      summary::marker {
+        content: "➳";
+        color: red;
+      }
+      li::marker {
+        color: blueviolet;
+      }
+      input::placeholder {
+        color: red;
+        font-style: italic;
+      }
+      .exemplo::selection {
+        background-color: aquamarine;
+        text-decoration: line-through;
+      }
+      input::-webkit-file-upload-button {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      p::before{
+        content: "antes: ";
+      }
+      p::after{
+        content: " .depois ";
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-elementos</h1>
+    <p>
+      Usado para adicionar elementos extras na pãgina, sem a necessidade de
+      declarà-lo no HTML, ou para selecionar uma parte de algum elemento.
+    </p>
+    <p>Identificado por <code>::palavra-chave</code></p>
+    <h2>Pseudo-elemento - <code>::first-letter</code></h2>
+    <p>Seleciona a primeira letra da primeira linha</p>
+    <p>Pripriedades disponíveis</p>
+    <ul>
+      <li>font</li>
+      <li>color</li>
+      <li>background</li>
+      <li>margin</li>
+      <li>padding</li>
+      <li>border</li>
+      <li>text-decoration</li>
+      <li>vertical-align</li>
+      <li>text-transform</li>
+      <li>line-height</li>
+    </ul>
+    <hr />
+    <h2>Pseudo-elemento - <code>::first-line</code></h2>
+    <p>Seleciona a primeira linha do elemento</p>
+    <p>Pripriedades disponíveis</p>
+    <ul>
+      <li>font</li>
+      <li>color</li>
+      <li>background</li>
+      <li>margin</li>
+      <li>padding</li>
+      <li>border</li>
+      <li>text-decoration</li>
+      <li>vertical-align</li>
+      <li>text-transform</li>
+      <li>line-height</li>
+    </ul>
+    <hr />
+    <h2>Pseudo-elemento - <code>::backdrop</code></h2>
+    <p>Estiliza o plano de fundo de elementos em modo de tela cheia</p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/ArwcHjmsw3A?si=9uqI7oB8zINCPb1h"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <hr />
+    <h2>Pseudo-elemento - <code>::marker</code></h2>
+    <p>Estiliza o marcador de lista</p>
+    <details><summary>Propriedades aceitas:</summary></details>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <hr />
+    <h2>Pseudo-elemento - <code>::placeholder</code></h2>
+    <p>
+      Um placeholder é uma dica para ajudar no preenchimento de algum campo de
+      formulário.
+    </p>
+    <details><summary>Propriedades aceitas:</summary></details>
+    <ul>
+      <li>color</li>
+      <li>font</li>
+      <li>background</li>
+      <li>text</li>
+    </ul>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" placeholder="fulano" />
+    <label for="senha">Senha</label>
+    <input type="password" name="senha" placeholder="Mínimo de 10 caracteres" />
+    <hr />
+    <h2>Pseudo-elemento - <code>::selection</code></h2>
+    <p>Permite estilizar a seleção de textos no navegador</p>
+    <details><summary>Propriedades aceitas:</summary></details>
+    <ul>
+      <li>color</li>
+      <li>background-color</li>
+      <li>text</li>
+    </ul>
+    <p class="exemplo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam
+      voluptatum ad cum consequatur corporis officiis blanditiis doloribus
+      laborum dignissimos soluta, iusto enim tempora corrupti suscipit placeat
+      ab at magnam.
+    </p>
+    <p class="exemplo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veniam
+      voluptatum ad cum consequatur corporis officiis blanditiis doloribus
+      laborum dignissimos soluta, iusto enim tempora corrupti suscipit placeat
+      ab at magnam.
+    </p>
+    <hr />
+    <h2>Pseudo-elemento - <code>::file-selector-button</code></h2>
+    <p>Permite estilizar a seleção de textos no navegador</p>
+    <form action="">
+      <label for="fileUpload">Upload de arquivo</label>
+      <input name="fuleUpload" type="file" />
+    </form>
+    <hr>
+    <p><span>Exemplo 1</span><span>Exemplo 2</span><span>Exemplo 3</span></p>
+  </body>
+</html>
