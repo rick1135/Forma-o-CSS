@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgrey;
+        }
+        input[type="checkbox"]:checked + label{
+            text-decoration: line-through;
+        }
+        form label, form button{
+            display: block;
+            margin: 12px;
+        }
+        input{
+            padding: 4px 14px;
+            margin-top: 8px;
+        }
+        form{
+            border: 1px solid grey;
+            border-radius: 4px;
+            width: 300px;
+            padding: 40px;
+            margin: auto;
+            background-color: rgb(247, 247, 247);
+        }
+        form h3{
+            margin: 0;
+        }
+        input:in-range, input:valid{
+            border: 1px solid rgb(117, 247, 117);
+            color: rgb(28, 168, 28);
+        }
+        input:out-of-range, input:invalid{
+            border: 1px solid rgb(247, 117, 117);
+            color: rgb(168, 28, 28);
+        }
+        .error{
+            color: orangered;
+            font-size: 0.75rem;
+            display: none;
+        }
+        input:invalid + .error{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes | <code>:checked e :indeterminate</code></h1>
+    <div>
+        <input type="checkbox" name="check1" id="check1"/>
+        <label for="check">Tarefa 1</label>
+    </div>
+    <div>
+        <input type="checkbox" name="check2" id="check2"/>
+        <label for="check">Tarefa 2</label>
+    </div>
+    <div>
+        <input type="checkbox" name="check3" id="check3"/>
+        <label for="check">Tarefa 3</label>
+    </div>
+    <div>
+        <input type="checkbox" name="check4" id="check4"/>
+        <label for="check">Tarefa 4</label>
+    </div>
+    <div>
+        <input type="checkbox" name="check5" id="check5"/>
+        <label for="check">Tarefa 5</label>
+    </div>
+    <hr>
+    <input type="radio" name="sexo">
+    <label for="genero">Feminino</label>
+    <input type="radio" name="sexo">
+    <label for="genero">Masculino</label>
+    <hr>
+    <h1>Pseudo-classes:</h1>
+    <div>
+        <input type="checkbox" name="invalid" id="invalid"/>
+        <label for="check">:invalid</label>
+    </div>
+    <div>
+        <input type="checkbox" name="valid" id="valid"/>
+        <label for="check">:valid</label>
+    </div>
+    <div>
+        <input type="checkbox" name="inrange" id="inrange"/>
+        <label for="check">:in-range</label>
+    </div>
+    <div>
+        <input type="checkbox" name="outofrange" id="outofrange"/>
+        <label for="check">:out-of-range</label>
+    </div>
+    <hr>
+    <form action="">
+        <h3>Faça sua compra:</h3>
+        <label for="email" required>E-mail</label>
+        <input type="email" name="email">
+        <span class="error">Valor inválido.</span>
+        <label for="codigo-produto">Código do produto:</label>
+        <input type="number" name="codigo-produto" min="1000">
+        <span class="error">Valor inválido.</span>
+        <label for="cupom">Cupom de desconto</label>
+        <input type="cupom" type="text" pattern="[a-z]+" placeholder="Apenas letras minúsculas">
+        <span class="error">Valor inválido.</span>
+        <label for="data-nascimento"> Data de nascimento</label>
+        <input type="date" name="data-nascimento">
+        <span class="error">Valor inválido.</span>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" name="quantidade" min="1" max="10">
+        <span class="error">Valor inválido.</span>
+        <label>
+            <input type="checkbox" required>
+            <span>Li e concordo com os termos de uso</span>
+        </label>
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>

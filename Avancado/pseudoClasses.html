@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code{
+            background-color: lightgrey;
+        }
+        button{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+        .container:hover{
+            background-color: rgb(127, 131, 134);
+        }
+        #botao1:active{
+            background-color: purple;
+            color: white;
+        }
+        label{
+            display: block;
+            margin: 12px;
+            font-size: 1.5rem;
+        }
+        input, select{
+            font-size: 1.5rem;
+        }
+        input:focus, select:focus{
+            border: 2px dashed blue;
+            background-color: lightblue;
+        }
+        label:focus-within{
+            font-weight: bold;
+        }
+        p:target{
+            background-color: lightgreen;
+        }
+        p:target::before{
+            color: red;
+            margin-right: 10px;
+        }
+        input:disabled{
+            background-color: lightcoral;
+        }
+        input:enabled{
+            background-color: lightgreen;
+        }
+        #exemplo2:link{
+            color: limegreen;
+            background-color: black;
+        }
+        #exemplo2:visited{
+            color: yellow;
+        }
+        input:placeholder-shown{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes | <code>:hover</code></h1>
+    <button>Enviar</button>
+    <div class="container"></div>
+    <hr>
+    <h1>Pseudo-classes | <code>:active</code></h1>
+    <button id="botao1">Enviar</button>
+    <br>
+    <a href="https://dio.me">Site da DIO</a>
+    <hr>
+    <h1>Pseudo-classes | <code>:focus</code></h1>
+    <form action="">
+        <p>Faça seu pedido! Escolhe um sabor de sorvete:</p>
+        <label for="">Nome completo:
+            <input type="text" name="nome">
+        </label>
+        <br>
+        <label for="">Sabor do sorvete:
+            <select name="sabor">
+                <option value="limao">Limao</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="morango">Morango</option>
+            </select>
+        </label>
+        <button>Finalizar pedido!</button>
+    </form>
+    <hr>
+    <h1>Pseudo-classes | <code>:target</code></h1>
+    <h3>Table of contents</h3>
+    <ol>
+        <li><a href="#p1">Pular para o primeiro parágrafo</a></li>
+        <li><a href="#p2">Pular para o segundo parágrafo</a></li>
+        <li><a href="#">Link não leva para lugar nenhum</a></li>
+    </ol>
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eum sed corrupti impedit maxime. Qui inventore excepturi, porro nemo repellat quaerat? Commodi minus sed velit itaque soluta consectetur corrupti sapiente.</p>
+    <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eum sed corrupti impedit maxime. Qui inventore excepturi, porro nemo repellat quaerat? Commodi minus sed velit itaque soluta consectetur corrupti sapiente.</p>
+    <hr>
+    <h1>Pseudo-classes | <code>:enabled e :disabled</code></h1>
+    <form action="">
+        <label for="nome">Nome:
+            <input type="text" name="nome" id="nome" disabled>
+        </label>
+        <label for="email">Email:
+            <input type="email" name="email" id="email" disabled>
+        </label>
+        <label for="senha">Senha:
+            <input type="password" name="senha" id="senha">
+        </label>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <h1>Pseudo-classes | <code>:link e :visited</code></h1>
+    <a href="https://dio.me" id="exemplo2">Site da DIO</a>
+    <hr>
+    <h1>Pseudo-classes | <code>:placeholder-shown</code></h1>
+    <form action="">
+        <label for="nome">Nome:
+            <input type="text" name="nome" id="nome">
+        </label>
+        <label for="email">Email:
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+        </label>
+        <label for="senha">Senha:
+            <input type="number" name="age" id="age" value="18" placeholder="Digite sua senha">
+        </label>
+        <button type="submit">Enviar</button>
+</body>
+</html>
