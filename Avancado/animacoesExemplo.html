@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #fefefe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: 12px 24px;
+            border: none;
+            background-color: #d53369;
+            color: #fefefe;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 8px 12px 7px lightcoral;
+        }
+        button:hover{
+            animation: wiggle 1s infinite;
+            cursor: pointer;
+            filter: brightness(1.25);
+        }
+        @keyframes wiggle {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(10deg);
+            }
+            50%{
+                transform: rotate(-10deg);
+            }
+            75%{
+                transform: rotate(5deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>Clique aqui</button>
+</body>
+</html>

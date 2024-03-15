@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(247, 247, 247);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .box{
+            background: linear-gradient(90deg, #FC566B 0%, #7f5bb2 100%); 
+            width: 200px;
+            height: 200px;
+            border-radius: 30%;
+        }
+        .box:hover{
+            /* transform: translate(0px, 50px); */
+            /* transform: rotate(50deg); */
+            /* transform: rotateX(70deg); */
+            /* transform: scale(1.2); */
+            /* transform: skew(20deg, 20deg); */
+            transform: matrix(1.2, 0, 0, 1.1, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

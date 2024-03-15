@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(247, 247, 247);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            perspective: 300px;
+            perspective-origin: top;
+            transform-style: preserve-3d;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            background: #d53369; 
+            /* animation-name: change-background;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate; */
+            animation: change-background 5s infinite linear 2s alternate forwards;  
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        @keyframes change-background {
+            0%{
+                background: #d53369;
+            }
+            25%{
+                background: #41b0ec;
+            }
+            50%{
+                background: #fc466b;
+            }
+            75%{
+                background: #a5a2a9;
+            }
+            100%{
+                background: #d53369;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
