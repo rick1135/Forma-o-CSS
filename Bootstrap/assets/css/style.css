@@ -18,3 +18,24 @@
     --bs-btn-disabled-border-color: #198754;
     --bs-gradient: none;
 }
+
+.carousel-item{
+    height: 500px;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(31, 31, 31));
+    position: absolute;
+}
+main{
+    margin-top: 4.5rem;
+}

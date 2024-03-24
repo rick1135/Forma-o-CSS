@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(45deg,
+            #9b34ef 0%,
+            #490cb0 20%,
+            transparent 50%);
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(90deg,
+            #5516ba,
+            rgba(255, 0, 229, 0.5) 80%);
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.menu {
+    background: var(--nav-bg-color);
+    width: 100%;
+    padding: 12px 16px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_logo {
+    max-width: 160px;
+}
+
+.menu_logo img {
+    width: 100%;
+}
+
+.menu_item {
+    margin-right: 24px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu_item_button {
+    padding: 8px 26px;
+    transition: background 1s, color 1s;
+}
+
+.button {
+    background-color: #b535f6;
+    border-radius: 500px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    position: relative;
+    top: 50px;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+    padding: 100px 0 300px;
+}
+
+.header_button {
+    animation: wiggle 2.2s linear infinite;
+}
+
+.header::after {
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.header_content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.header_channels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.header_channel {
+    object-fit: contain;
+}
+
+.header_title {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header_title_span {
+    display: block;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.divider {
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5) 80%);
+}
+
+.offer {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.offer_price {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.offer_price_small{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.button_gradient {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    background-size: 250%;
+    transition: background 1s, outline 1s, transform 1s;
+    padding: 16px 40px;
+}
+
+.button.button_gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.text_small {
+    max-width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    10% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(-15deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    35% {
+        transform: rotate(-10deg);
+    }
+
+    40%,
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.assinar {
+    background: url(../imgs/background-movies-series.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.planos{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    perspective: 2000px;
+    perspective-origin: top;
+    gap: 80px;
+}
+
+.planos_card{
+    background: var(--card-bg-color);
+    padding: 40px 60px;
+    border-radius: 8px;
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 1s ease-in-out;
+}
+
+.planos:has(.planos_card:nth-child(1):hover)
+  .planos_card:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+
+.planos:has(.planos_card:nth-child(2):hover)
+  .planos_card:nth-child(1) {
+  transform: rotateY(45deg);
+}
+
+.plano_preco{
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.text_small{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.vantagem{
+    text-align: left;
+    list-style: none;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    padding-left: 14px;
+}
