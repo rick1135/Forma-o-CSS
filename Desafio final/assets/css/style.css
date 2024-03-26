@@ -481,7 +481,7 @@ ul{
   }
 
 .conteudo{
-    display: flex;
+/*     display: flex; */
     justify-content: center;
     align-items: center;
     font-size: "Quicksand", cursive;
