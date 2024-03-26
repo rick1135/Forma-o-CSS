@@ -315,6 +315,11 @@ ul{
     font-weight: 700;
 }
 
+.text_small{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 .vantagem{
     text-align: left;
     list-style: none;
