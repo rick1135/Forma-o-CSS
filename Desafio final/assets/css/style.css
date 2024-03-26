@@ -315,15 +315,217 @@ ul{
     font-weight: 700;
 }
 
-.text_small{
-    font-size: 1rem;
-    font-weight: 300;
-}
-
 .vantagem{
     text-align: left;
     list-style: none;
     font-size: 1.25rem;
     margin-bottom: 14px;
     padding-left: 14px;
+}
+
+.conteudo_container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.conteudo_card{
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.conteudo_card:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+}
+
+.conteudo_card:hover .conteudo_img{
+    opacity: 0.5;
+}
+
+.conteudo_card:nth-child(1):hover{
+    background-image: url("../images/hbo-hover_0.webp");
+}
+
+.conteudo_card:nth-child(2):hover{
+    background-image: url("../images/MAX-Hover.webp");
+}
+
+.conteudo_card:nth-child(3):hover{
+    background-image: url("../images/DC-Hover.webp");
+}
+
+.conteudo_card:nth-child(4):hover{
+    background-image: url("../images/WB-Hover.webp");
+}
+
+.conteudo_card:nth-child(5):hover{
+    background-image: url("../images/CN-Hover.png");
+}
+
+.conteudo_card:nth-child(6):hover{
+    background-image: url("../images/UCL-Hover.webp");
+}
+
+.conteudo_img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+}
+
+@media screen and (max-width: 1200px) {
+    .subscription__plans {
+      gap: 40px;
+    }
+  
+    .contents__container {
+      gap: 32px;
+    }
+  }
+  
+  @media screen and (max-width: 1140px) {
+    .subscription__plans {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subscription__card {
+      max-width: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .contents__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .subscription__price {
+      font-size: 1.5rem;
+    }
+  
+    .subscription__description {
+      font-size: 1rem;
+    }
+  
+    .subscription__plan {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .subscription__card {
+      padding: 40px;
+    }
+  
+    .contents__container {
+      grid-template-columns: repeat(6, 100%);
+      grid-auto-flow: column;
+      overflow: auto hidden;
+    }
+  }
+  
+  @media (pointer: coarse) {
+    .contents__card:hover {
+      transform: none;
+    }
+  
+    .subscription__plans:has(.subscription__card:nth-child(1):hover)
+      .subscription__card:nth-child(2),
+    .subscription__plans:has(.subscription__card:nth-child(2):hover)
+      .subscription__card:nth-child(1) {
+      transform: none;
+    }
+  }
+
+  .footer{
+    display: block;
+  }
+
+  .footer_link{
+    font-family: "Raleway", sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--link-color);
+    text-transform: uppercase;
+    margin: 0 14px;
+    letter-spacing: 2px;
+    transition: color 0.5s;
+    text-decoration: none;
+  }
+
+  .footer_dir{
+    font-size: 0.75rem;
+    margin: 16px 0;
+    color: var(--link-color);
+    max-width: 100%;
+  }
+
+  .footer_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+  }
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: "Quicksand", cursive;
+    width: 100%;
+    height: 70%;
+    padding: 24px;
+    padding-top: 90px;
+}
+
+.login{
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--form-bg-color);
+    border-radius: 8px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 35px;
+}
+
+.login_titulo{
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.login_label{
+    text-align: left;
+}
+
+.login_inp{
+    background: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 1rem;
+}
+
+.login_acoes{
+    margin-top: 24px;
+    text-align: left;
+}
+
+.login_link{
+    color: var(--link-color);
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: bold;
 }
